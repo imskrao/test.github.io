@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Current Year</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .main {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #252525;
+        }
+
+        .main h1 span {
+            background: #0000ff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Cureent Year is <span id="year"></span></h1>
+    </div>
+    <script>
+        document.querySelector('#year').innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>
